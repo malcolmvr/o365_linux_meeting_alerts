@@ -30,6 +30,6 @@ $ chmod +x get_events.sh
 
 * crontab -e
 * Add:
-    * `*/1 * * * * /usr/bin/bash -c 'cd /home/malcolm/Source/personal/ubuntu_meeting_notifications && source check_events.sh' > /tmp/cronlogc.txt 2>&1`
-    * `*/15 * * * * /usr/bin/bash -c 'cd /home/malcolm/Source/personal/ubuntu_meeting_notifications && source env/bin/activate && python3 get_events.py' > /tmp/cronlogg.txt 2>&1`
+    * `*/1 * * * * /usr/bin/bash -c 'cd /home/malcolm/Source/personal/ubuntu_meeting_notifications && source check_events.sh' > /dev/null 2>&1`
+    * `*/15 * * * * /usr/bin/bash -c 'cd /home/malcolm/Source/personal/ubuntu_meeting_notifications && source env/bin/activate && python3 get_events.py' > /dev/null 2>&1`
 
