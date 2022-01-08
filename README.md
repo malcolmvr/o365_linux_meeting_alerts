@@ -62,10 +62,12 @@ $ chmod +x check_events.sh
 $ chmod +x get_events.sh
 ```
 
+Next add the following couple of lines, updated the path to "ubuntu_meeting_notifications":
+
 * crontab -e
 * Add:
-    * `*/1 * * * * /usr/bin/bash -c 'cd /home/malcolm/Source/personal/ubuntu_meeting_notifications && source check_events.sh' > /dev/null 2>&1`
-    * `*/15 * * * * /usr/bin/bash -c 'cd /home/malcolm/Source/personal/ubuntu_meeting_notifications && source env/bin/activate && python3 get_events.py' > /dev/null 2>&1`
+    * `*/1 * * * * /usr/bin/bash -c 'cd /.../ubuntu_meeting_notifications && source check_events.sh' > /dev/null 2>&1`
+    * `*/15 * * * * /usr/bin/bash -c 'cd /.../ubuntu_meeting_notifications && source env/bin/activate && python3 get_events.py' > /dev/null 2>&1`
 
 ## Customizing the alert behavior
 
