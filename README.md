@@ -55,6 +55,16 @@ export IMMINENT_DESKTOP_BACKGROUND_COLOR=780e0e
 export NORMAL_DESKTOP_BACKGROUND_COLOR=222222
 ```
 
+Get an authentication token by running:
+
+```
+source check_events.sh
+```
+
+A URL will be printed out in the shell. Open it in a browser and you will be redirected
+to another URL. Copy that URL and paste it back into the shell. An "o365_token.txt"
+should appear.
+
 Next setup some CRON jobs. First make some files executable.
 
 ```
@@ -73,3 +83,7 @@ Next add the following couple of lines, updating the path to "o365_linux_meeting
 
 Update the `update_ui.py` file to change what happens when a meeting is imminent. If you think of something cool here
 send me a note and I'll add it to the repo as an option.
+
+## License
+
+MIT
