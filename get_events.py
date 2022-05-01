@@ -7,7 +7,7 @@ from O365 import Account
 load_dotenv()
 
 credentials = (getenv('APPLICATION_ID'), getenv('CLIENT_SECRET'))
-
+print(credentials)
 account = Account(credentials, auth_flow_type='authorization', tenant_id=getenv('TENANT_ID'))
 if not isfile("./o365_token.txt"):
     if account.authenticate(scopes=['https://graph.microsoft.com/.default', 'offline_access']):
