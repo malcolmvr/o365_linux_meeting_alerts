@@ -47,9 +47,9 @@ Clone the repo:
 Create an .env file, for example:
 
 ```
-export TENANT_ID=[the "Directory (tenant) ID" on the Overview blade]
-export APPLICATION_ID=[the "Application (client) ID" on the Overview blade]
-export CLIENT_SECRET=[to the client secret (not the Client ID)]
+export TENANT_ID="[the "Directory (tenant) ID" on the AAD Overview blade]"
+export APPLICATION_ID="[the "Application (client) ID" on the AAD Overview blade]"
+export CLIENT_SECRET="[to the client secret (not the Client ID)]"
 export IMMINENT_MINUTES=5
 export IMMINENT_DESKTOP_BACKGROUND_COLOR=780e0e
 export NORMAL_DESKTOP_BACKGROUND_COLOR=222222
@@ -58,7 +58,7 @@ export NORMAL_DESKTOP_BACKGROUND_COLOR=222222
 Get an authentication token by running:
 
 ```
-source check_events.sh
+source get_events.sh
 ```
 
 A URL will be printed out in the shell. Open it in a browser and you will be redirected
