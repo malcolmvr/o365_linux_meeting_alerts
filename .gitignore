@@ -4,3 +4,4 @@ env
 events.txt
 is_imminent.txt
 o365_token.txt
+.vscode
