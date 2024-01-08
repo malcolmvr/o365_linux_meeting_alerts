@@ -5,7 +5,7 @@ from update_ui import show_imminent_event
 IS_IMMINENT_FILE = "is_imminent.txt"
 
 with open("events.txt", "r") as f:
-    event_times = [datetime.fromisoformat(stime) for stime in f.read().split("\n")]
+    event_times = [datetime.fromisoformat(stime) for stime in f.read().split("\n") if stime]
 
 now = datetime.now(timezone.utc)
 imminent_events = [
